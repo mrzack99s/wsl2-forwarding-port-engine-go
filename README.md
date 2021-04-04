@@ -11,8 +11,8 @@ WSL2-forwarding-port-engine-go is backend of WSL2-forwarding-port cli
 1. Open WSL2
 2. Download the binary with the command 
 ```
-    curl -LO https://github.com/mrzack99s/wsl2-forwarding-port-engine-go/releases/download/v1.0.0-beta/wfp-engine.exe
-    curl -LO https://github.com/mrzack99s/wsl2-forwarding-port-engine-go/releases/download/v1.0.0-beta/wfp-engine-autorun.vbs
+    curl -LO https://github.com/mrzack99s/wsl2-forwarding-port-engine-go/releases/download/v1.0.1-beta/wfp-engine.exe
+    curl -LO https://github.com/mrzack99s/wsl2-forwarding-port-engine-go/releases/download/v1.0.1-beta/wfp-engine-autorun.vbs
 ```
 3. Make the wfp-engine binary executable.
 ```

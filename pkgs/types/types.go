@@ -4,7 +4,7 @@ import (
 	"context"
 )
 
-var EngineVersion string = "1.0.0-go-beta"
+var EngineVersion string = "1.0.1-go-beta"
 
 type PacketForwarder struct {
 	Protocol  string `json:"protocol"`
