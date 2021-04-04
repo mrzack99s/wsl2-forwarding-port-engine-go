@@ -6,7 +6,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/mrzack99s/wsl2-forwarding-port-engine-go/pkgs/cmds"
 	"github.com/mrzack99s/wsl2-forwarding-port-engine-go/pkgs/types"
 )
 
@@ -20,28 +19,6 @@ func StopForwarder(hash8Id string) (status bool) {
 		status = true
 	}
 	return
-}
-
-func StartChecking() {
-	for key, element := range RuleTables {
-		switch element.Protocol {
-		case "UDP":
-			if element.WSLIPAddr != cmds.GetWSLIP() {
-				CreateUDPForwarder(element.WINPort, element.WSLPort, true)
-				delete(RuleTables, key)
-			} else {
-				CreateUDPForwarder(element.WINPort, element.WSLPort, true)
-			}
-
-		case "TCP":
-			if element.WSLIPAddr != cmds.GetWSLIP() {
-				CreateTCPForwarder(element.WINPort, element.WSLPort, true)
-				delete(RuleTables, key)
-			} else {
-				CreateTCPForwarder(element.WINPort, element.WSLPort, true)
-			}
-		}
-	}
 }
 
 func MGMTServe() {

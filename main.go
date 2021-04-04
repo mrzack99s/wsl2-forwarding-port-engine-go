@@ -6,6 +6,5 @@ import (
 
 func main() {
 	runtimes.Parse()
-	runtimes.StartChecking()
 	runtimes.MGMTServe()
 }
